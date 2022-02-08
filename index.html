@@ -1,8 +1,44 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <title>My blog</title>
+  </head>
+  <style> 
+    body { 
+      font-family: 'Dosis', sans-serif;
+      background-color: aliceblue;
+      color: orangered;
+      min-height: 100vh;
+      max-width: 1000px; 
+      margin: 0 auto;
+      text-align: center;
+  }
+    h1 {
+    color: rgb(73, 5, 73);
+    font-size: 7vw;
+  }
+    p { 
+      font-size: 2vw;
+    } 
+
+    .header-image {
+      width: 100px;
+      height: auto;
+      background: url("images/whanau-pic.jpg") no-repeat;
+    
+    }
+    .header-image:hover {
+        background: url("images/whanau-pic-thermal.jpg") no-repeat;
+  </style>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
+    <div>
+    <h1>Adrian's EDA Blog</h1> 
+    </div>
+    <div class="header-image"></div>
     <p> This is the beginning of my website home page.</p>
     <p> It will eventually contain a list of links to all my blogs. </p>
   </body>
