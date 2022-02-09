@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Margins vs Padding vs Borders</title>
+      </head>
+    <style> 
+    .demo-box {
+     margin: 0px auto;
+     }
+
+    .blue {
+      background: #3305da;
+      height: 200px;
+      width: 200px;
+      margin: 70px;
+      border: 10px solid red;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 50px; 
+    }
+
+    .white {
+      background: white;
+      width: 347px;
+      height: 347px;
+      box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+    }
+      
+    .paddedblue {
+        background: #3305da;
+      height: 200px;
+      width: 200px;
+      margin: 70px;
+      border: 10px solid red;
+      padding: 40px;
+      /* box-sizing: border-box; */
+      font-size: 50px; 
+    }
+
+    
+
+    body { 
+      font-family: 'Dosis', sans-serif;
+      background-color: aliceblue;
+      color: charcoal;
+      min-height: 100vh;
+      max-width: 1000px; 
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+    color: rgb(73, 5, 73);
+    font-size: 3vw;
+    margin: 100px;
+    }
+    h2 {
+        color: rgb(73, 5, 73);
+        font-size: 2vw;
+        margin: 50px;
+    }
+    p { 
+      font-size: 1.5vw;
+    } 
+
+   li {
+       font-size: 1.5vw;
+       text-align: justify;
+   }
+
+    .bluebox {
+      display: grid; 
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      margin: 100px;
+    }
+    
+    </style>
+    <body>
+        <h1>What is the difference between Margins, Padding and Borders?</h1>
+        <p>Today’s blog post is going to outline what the difference is between Margins, Padding and Borders, which ones follow logic and which ones are going to send you crying into your pillow tyring to understand them.
+            <br><br> 
+            First let’s start with the similarities, all 3 have the ability to add space to an element, which we can use to achieve our desired layout of the element on the page (in theory!). 
+            The difference comes in where each of them adds space between itself and surrounding elements. </p> 
+        <p>If we look at the code and the corresponding output below we can see we have a blue box with the word 'Box' inside it. 
+                The box is surrounded by a red boarder. For the purpose of this post I have put 
+                these inside another white box which is going to represent a browser tab which the box is displayed on.</p>
+        
+            <div class="bluebox">
+                <div><img src="images/blue.png"></div>
+                <div class="white demo-box">
+                  <div class="blue">Box</div>
+                </div>
+            </div>
+        <p>From the above we can see that we have:</p><br>
+        <ul>
+            <li>
+                set the <em>margin</em> to 70px. The margin affects how much space is between the box (includings it's boarder, and contents) and other elements surrounding it.
+                Any changes to the margin size does not affect the size of the box or it's boarder.<br><br> This one for the most part follows logic, one enters the margin, voila it stays away from other elements by the specified margin
+                <em>UNLESS</em> you get caught out by collapsing margins! That's right, under normal circumstances you would think if you have two elements side by side, each with a 50px margin, by logic you should have a 100px margin where those two 
+                elements meet right?<br><br> Welcome to CSS, gonna hedge my bets that this is not an apple product, no intuitive functionality we're dealing with here, when two elements butt up against each other CSS collapses the meeting margins, i.e they absorb each other so in the aforementioned scenario
+                one would end up with a 50px margin between those two elements. There are ways around this, to prevent the collapsing effect but that will need to be covered in a future post.</em>
+            </li>
+               <br><br>
+            <li>
+                set the <em>boarder</em> to 10 pixels. This one is pretty straight forward. Think of the boarder like the bouncer at the local club, they're often not pretty, the thicker they are the more they stand out, and no matter what's happening around them they're staying put.
+                <br>Changing the boarder size does not alter the size of the margin or the size of the box. 
+                <em><br><br>Note, it is possible to configure an element so the total dimensions includes the boarder however the default is for the boarder thickness to be added onto the set dimensions of the element.</em></em>
+            </li>
+                <br><br>
+            <li>
+                set the padding to 20px. In this example the padding affects how much space is between the edge of the box and the word 'box'. If the padding was set to zero it would be positioned smack hard up against the boarder.
+                From my experience thus far padding is out to wreak havoc on your logic muscles. Increasing the padding will move the word 'box' in from the edges but it also has the capacity to increase the size of the box itself. There's definitely some 
+                dark arts at play with this one so use with caution. I thoroughly advise researching the "box-sizing" attribute. See below what my example looks like when commenting out box-sizing and having a 
+                40px padding surround does.
+            </li>    
+            <br><br>
+        </ul>  
+        <div class="bluebox">
+            <div><img src="images/paddedblue.png"></div>
+            <div class="white demo-box">
+              <div class="paddedblue">Box</div>
+        </div>
+    
+        </div>
+          <p>In summary margins and padding are going to be used extensively on your web development journey, they're not rocket science but they trip
+            all of us up from time to time. Boarders are straight forward, they do what it sounds like they do. To get your head around the other two the best way to
+            think of them are:<br>
+            <h2><em>Pushing content inwards is done with padding<br>Pushing content away is done with margins</em></h2>
+            <br><br><br>
+          </p>
+          <p>Hopefully this has beeen somewhat helpful, I've still got much more <strike>pain</strike> learning to experience to get comfortable on how to use and control white space in web development but 
+          todays learning has stolen a lot more time than it was meant to, my time box is giving me the same disapproving look my old man used to after missing curfew.</p>
+          <p>until next time.. Adrian</p>
+    </body>
+</html>
