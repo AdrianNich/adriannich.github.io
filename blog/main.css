@@ -6,6 +6,10 @@ body {
   max-width: 1000px; 
   margin: 20px auto;
   text-align: center;
+
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
 }
   h1 {
   color: rgb(73, 5, 73);
@@ -30,6 +34,9 @@ h3 {
     font-size: 2vw;
   } 
 
+  a {
+    text-decoration: none;
+  }
   header {
     font-size: 4vh;
     color:rgb(73, 5, 73);
@@ -40,6 +47,14 @@ h3 {
     content: '';
     display: table;
     clear: both;      
+  }
+
+  footer {
+    /* background: #333; */
+    color: rgb(73, 5, 73);
+    padding 3em;
+
+    margin-top: auto;
   }
   .profilepic {
           width: 188px;
@@ -148,7 +163,20 @@ h3 {
    margin: 100px;
  }
 
+ footer ul { 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer li { 
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+  position: relative;
+}
+
  @media (max-width: 500px) {
    body { margin: 50px;}
-   li {font-size: 2.5vw;}
+   li {font-size: 1em;}
  }
