@@ -1,86 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <title>Margins vs Padding vs Borders</title>
-      </head>
-    <style> 
-    .demo-box {
-     margin: 0px auto;
-     }
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>My blog</title>
+  </head>
+ 
+  <body>
+    <header>
+      <div class="container">
+        <nav> 
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    .blue {
-      background: #3305da;
-      height: 200px;
-      width: 200px;
-      margin: 70px;
-      border: 10px solid red;
-      padding: 20px;
-      box-sizing: border-box;
-      font-size: 50px; 
-    }
-
-    .white {
-      background: white;
-      width: 347px;
-      height: 347px;
-      box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
-    }
-      
-    .paddedblue {
-        background: #3305da;
-      height: 200px;
-      width: 200px;
-      margin: 70px;
-      border: 10px solid red;
-      padding: 40px;
-      /* box-sizing: border-box; */
-      font-size: 50px; 
-    }
-
-    
-
-    body { 
-      font-family: 'Dosis', sans-serif;
-      background-color: aliceblue;
-      color: charcoal;
-      min-height: 100vh;
-      max-width: 1000px; 
-      margin: 5px auto;
-      text-align: center;
-    }
-    h1 {
-    color: rgb(73, 5, 73);
-    font-size: 3vw;
-    margin: 100px;
-    }
-    h2 {
-        color: rgb(73, 5, 73);
-        font-size: 2vw;
-        margin: 50px;
-    }
-    p { 
-      font-size: 1.5vw;
-    } 
-
-   li {
-       font-size: 1.5vw;
-       text-align: justify;
-   }
-
-    .bluebox {
-      display: grid; 
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
-      margin: 100px;
-    }
-    
-    </style>
+    </header>
+  
     <body>
-        <h1>What is the difference between Margins, Padding and Boarders?</h1>
+        <h2>The Dark Art of Controlling White Space</h2>
         <p>Today’s blog post is going to outline what the difference is between Margins, Padding and Boarders, which ones follow logic and which ones are going to send you crying into your pillow trying to understand them.
             <br><br> 
             First let’s start with the similarities, all 3 have the ability to add space to an element, which we can use to achieve our desired layout of the element on the page (in theory!). 
@@ -129,7 +73,7 @@
           <p>In summary margins and padding are going to be used extensively on your web development journey, they're not rocket science but they trip
             all of us up from time to time. Boarders are straight forward, they do what it sounds like they do. To get your head around the other two the best way to
             think of them are:<br>
-            <h2><em>Pushing content inwards is done with padding<br>Pushing content away is done with margins</em></h2>
+            <h3><em>Pushing content inwards is done with padding<br>Pushing content away is done with margins</em></h3>
             <br><br><br>
           </p>
           <p>Hopefully this has beeen somewhat helpful, I've still got much more <strike>pain</strike> learning to experience to get comfortable on how to use and control white space in web development but 

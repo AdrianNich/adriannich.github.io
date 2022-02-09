@@ -1,0 +1,149 @@
+body { 
+  font-family: 'Dosis', sans-serif;
+  background-color: aliceblue;
+  color: charcoal;
+  min-height: 100vh;
+  max-width: 1000px; 
+  margin: 5px auto;
+  text-align: center;
+}
+  h1 {
+  color: rgb(73, 5, 73);
+  font-size: 7vw;
+  margin-top: 50px;
+}
+
+h2 {
+  color: rgb(73, 5, 73);
+  font-size: 4vw;
+  margin-top: 50px; 
+  text-align: center;
+}
+
+h3 {
+  color: rgb(73, 5, 73);
+  font-size: 3vw;
+  margin-top: 50px; 
+  text-align: center;
+}
+  p { 
+    font-size: 2vw;
+  } 
+
+  header {
+    font-size: 4vh;
+    color:rgb(73, 5, 73);
+    /* background: #55d66a; */
+        }
+
+  header ::after {
+    content: '';
+    display: table;
+    clear: both;      
+  }
+  .profilepic {
+          width: 188px;
+          height: 188px;
+          background-position: center;
+          margin: 0 auto;
+          background-image: url(
+"https://adriannich.github.io/images/smiles.jpg");
+          background-repeat: no-repeat;
+          border-radius: 50%;
+      }
+
+      .profilepic:hover {
+          background-image: url(
+"https://adriannich.github.io/images/scary.jpg");
+          background-repeat: no-repeat;
+      }
+  .container { 
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  nav { 
+    float: right;
+  }
+  nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li { 
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+  }
+
+  nav a{
+    color: rgb(73, 5, 73);
+    text-decoration: none;
+    text-transform: uppercase; 
+      }
+
+  nav a:hover {
+    color: black;
+  }    
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(73, 5, 73);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  .demo-box {
+    margin: 0px auto;
+    }
+
+   .blue {
+     background: #3305da;
+     height: 200px;
+     width: 200px;
+     margin: 70px;
+     border: 10px solid red;
+     padding: 20px;
+     box-sizing: border-box;
+     font-size: 50px; 
+   }
+
+   .white {
+     background: white;
+     width: 347px;
+     height: 347px;
+     box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+   }
+     
+   .paddedblue {
+       background: #3305da;
+     height: 200px;
+     width: 200px;
+     margin: 70px;
+     border: 10px solid red;
+     padding: 40px;
+     /* box-sizing: border-box; */
+     font-size: 50px; 
+   }
+   li {
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+ .bluebox {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20px;
+   margin: 100px;
+ }
