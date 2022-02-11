@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   max-width: 1000px; 
   margin: 20px auto;
-  text-align: center;
+  text-align: left;
 
   min-height: 150vh;
   display: flex;
@@ -15,20 +15,21 @@ body {
   color: rgb(73, 5, 73);
   font-size: 7vw;
   margin-top: 50px;
+  text-align: center;
 }
 
 h2 {
   color: rgb(73, 5, 73);
   font-size: 4vw;
   margin-top: 50px; 
-  text-align: center;
+  text-align: left;
 }
 
 h3 {
   color: rgb(73, 5, 73);
   font-size: 3vw;
   margin-top: 50px; 
-  text-align: center;
+  text-align: left;
 }
   p { 
     font-size: 2vw;
