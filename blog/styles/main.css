@@ -1,9 +1,9 @@
 body { 
   font-family: 'Dosis', sans-serif;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   color: charcoal;
-  min-height: 100vh;
-  max-width: 1000px; 
+  /* min-height: 100vh; */
+  /* max-width: 1000px;  */
   margin: 20px auto;
   text-align: left;
 
@@ -54,8 +54,9 @@ h3 {
     /* background: #333; */
     color: rgb(73, 5, 73);
     padding 3em;
-
+    position: relative;
     margin-top: auto;
+    left: 20%;
   }
   .profilepic {
           width: 188px;
@@ -179,7 +180,22 @@ footer li {
   font-size: 1.5vw;
 }
 
- @media (max-width: 500px) {
-   body { margin: 50px;}
+ @media (max-width: 320px) {
+   body { margin: 50px;
+          background: orange;}
    li {font-size: 1em;}
- }
+}
+
+@media (min-width: 768px) {
+  body { margin: 75px;
+          background: blanchedalmond; }
+}
+
+@media (min-width: 1200px) {
+  body { margin: 20px auto;
+         background: lightpink;
+         text-align: left;
+         /* min-height: 150vh; */
+         display: flex;
+         flex-direction: column;}
+}
