@@ -1,15 +1,9 @@
 body { 
   font-family: 'Dosis', sans-serif;
-  /* background-color: aliceblue; */
   color: charcoal;
-  /* min-height: 100vh; */
-  /* max-width: 1000px;  */
   margin: 20px auto;
   text-align: left;
 
-  min-height: 150vh;
-  display: flex;
-  flex-direction: column;
 }
   h1 {
   color: rgb(73, 5, 73);
@@ -180,22 +174,34 @@ footer li {
   font-size: 1.5vw;
 }
 
- @media (max-width: 320px) {
+/* @media (max-width: 320px) isn't working for me, background goes to white when i reduce 
+browser size below 320px. */
+
+ @media (min-width: 0px) {
    body { margin: 50px;
-          background: orange;}
-   li {font-size: 1em;}
+          background: orange;
+          display: flex;
+          flex-direction: column;
+          font-family: 'Dosis', sans-serif;
+          color: charcoal;}
+   /* li {font-size: 1em;} */
 }
 
 @media (min-width: 768px) {
   body { margin: 75px;
-          background: blanchedalmond; }
+         background: blanchedalmond; 
+         display: flex;
+         flex-direction: column;
+         font-family: 'Dosis', sans-serif;
+         color: charcoal;}
 }
 
 @media (min-width: 1200px) {
   body { margin: 20px auto;
          background: lightpink;
          text-align: left;
-         /* min-height: 150vh; */
          display: flex;
-         flex-direction: column;}
+         flex-direction: column;
+         font-family: 'Dosis', sans-serif;
+         color: charcoal;}
 }
